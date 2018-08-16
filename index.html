@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body class="selector">
+	<div class="box">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534394889717&di=10dff710fdd178f380bdfdf378c9a7d6&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F72%2F12%2F47z58PICWep_1024.jpg" alt="">
+		<div id="text" data-text-name="cheng">
+			<span>lzccheng你是谁啊</span>
+		</div>
+	</div>
+
+	<script>
+		var el = document.getElementById('text');
+
+		console.log(el.dataset);
+		console.log(el.dataset.text);
+		console.log('lai' in el.dataset);
+		el.dataset.lai = ' child';
+		console.log(el.dataset);
+		console.log('lai' in el.dataset);
+
+		(function (){
+			console.log('我自己执行了!HAHAHAHA~~~~')
+		})()
+	</script>
+</body>
+</html>

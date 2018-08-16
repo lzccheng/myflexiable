@@ -1,0 +1,14 @@
+$default-font-size: 75px;
+@function rem($px){
+	@return $px / $default-font-size *1rem;
+}
+
+.box{
+	text-align: center;
+	img{
+		width: rem(750px);
+	}
+}
+.selector{
+	font-size: rem(12px);
+}
